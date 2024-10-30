@@ -1,5 +1,6 @@
 # Automating E-Commerce Website Scenarios using PyTest Framework
 Website Used:[practice software testing](https://practicesoftwaretesting.com)
+
 This framework is designed to test end-to-end (E2E) scenarios for the specified e-commerce site. It was developed using PyTest-Selenium with a page object model approach.
 ## Table of contents
 - Overview
@@ -21,11 +22,16 @@ This automation framework is designed to test various user scenarios on the spec
    
 ### Framework Structure
 **page_objects/**: Contains page object classes for different pages (e.g., HomePage, LoginPage, ProductsPage, etc.)
+
 **tests/**: Contains test case files for different payment scenarios that utilize the page objects.
+
 **utilities/**: Contains utility classes (e.g., BaseClass) for shared functions like select a value from a dropdown,waiting for the elements visibility,etc..
+
 **conftest/**: Contains driver initialization,test data and page objects files are initialized here.
+
 **Test Case Example**
 Test Case: test_creditcard_payment
+
 **Description:**
 Simulates the process of registering a user, adding a product to the cart, and completing the checkout using a credit card.
 1. Sign in and register a new user.
