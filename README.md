@@ -20,18 +20,21 @@ This automation framework is designed to test various user scenarios on the spec
 5. HTML Reporting for visual test results (coming soon!)
    
 ### Framework Structure
-#fffff **page_objects**/: Contains page object classes for different pages (e.g., HomePage, CheckoutPage, LoginPage, etc.)
-tests/: Contains test case files that utilize the page objects.
-utilities/: Contains utility classes (e.g., BaseClass) for shared functions.
-data/: Directory for storing test data in dictionary format.
-Test Case Example
+**page_objects/**: Contains page object classes for different pages (e.g., HomePage, LoginPage, ProductsPage, etc.)
+**tests/**: Contains test case files for different payment scenarios that utilize the page objects.
+**utilities/**: Contains utility classes (e.g., BaseClass) for shared functions like select a value from a dropdown,waiting for the elements visibility,etc..
+**conftest/**: Contains driver initialization,test data and page objects files are initialized here.
+**Test Case Example**
 Test Case: test_creditcard_payment
-Description:
+**Description:**
 Simulates the process of registering a user, adding a product to the cart, and completing the checkout using a credit card.
+1. Sign in and register a new user.
+2. Navigate to the product page and add a product to the cart.
+3. Complete the checkout process, entering billing information and selecting credit card payment.
+4. Verify payment confirmation.
 
-Key Steps:
+### Reporting
+HTML reporting will be integrated within the next few days to provide detailed insights into test execution results.
 
-Sign in and register a new user.
-Navigate to the product page and add a product to the cart.
-Complete the checkout process, entering billing information and selecting credit card payment.
-Verify payment confirmation.
+
+
